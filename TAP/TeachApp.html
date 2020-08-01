@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	 {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 0px auto;
+		    padding: 10px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+        
+        input[type="checkbox"]
+        {
+           vertical-align: middle; 
+           width: 20px;
+           box-shadow: none;
+        }
+        
+	</style>
+</head>
+
+<body>
+<h1>Complete Teaching Assistant Application</h1>
+<form name="myform" action="Submit.html" method="get">
+	
+	<h2>Student Information</h2>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required autofocus><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required autofocus><br>
+    <label for="id">Student ID:</label>
+    <input type="id" name="id" id="id" required autofocus><br>
+    <label for="info1">Male:</label>
+    <input type="checkbox" name="male" value="Male"><br>
+    <label for="info2"> Female:</label>
+    <input type="checkbox" name="female" value="Female"><br>
+    
+    <h2>GPA</h2>
+    
+    <label for="gpa" required>GPA:</label>
+    <input type="gpa" name="gpa" id="gpa" placeholder="ex. 3.0" pattern="[0-9]+([\.,][0-9]+)?" step="0.01"><br>
+    <br>
+
+    <input type="submit" name="register" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>
